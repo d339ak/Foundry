@@ -27,3 +27,58 @@
 ## Safety
 
 - Never put a real wallet private key in a command (it is saved in terminal history)
+
+## Git
+
+### One-time setup
+
+- `git --version` — check Git is installed
+- - `git --version` → git version 2.43.0 - example
+
+- `git config --global user.name "<name>"` — set your name
+- - `git config --global user.name "abc"` - example
+
+- `git config --global user.email "<email>"` — set your GitHub email
+- - `git config --global user.email "abc@abc.com"` - example
+
+- `git config --global --list` — check name and email
+
+### Getting a repo
+
+- `git clone <url> .` — clone into the current folder (the dot = this folder)
+- - `cd ~/Foundry` then `git clone https://github.com/d339ak/Foundry.git .`
+
+### Daily work (run from ~/Foundry)
+
+- `Ctrl + Shift + G` — VS Code Source Control shortcut: does git add, git commit and git push together (write message → Commit → Sync Changes)
+
+### Daily work (run from ~/Foundry)
+
+- `git status` — see what changed (green = new, red = not staged)
+
+- `git add .` — stage all changes
+- - `git add Simple-Storage/src/SimpleStorage.sol` — stage just one file
+
+- `git commit -m "<message>"` — save a snapshot
+- - `git commit -m "Added SimpleStorage deploy script"`
+
+- `git push` — send commits to GitHub
+
+- `git pull` — get latest from GitHub (use in the D drive copy)
+
+### Fixing mistakes
+
+- `git rm -r --cached <folder>` — stop tracking on GitHub, keep on laptop
+- - `git rm -r --cached Simple-Storage/lib`
+
+## VS Code shortcuts
+
+- `Ctrl + S` — save file
+- `Ctrl + Shift + P` — command palette (search any setting or command)
+- `Shift + Alt + F` — format document
+- `Ctrl + -` / `Ctrl + +` / `Ctrl + 0` — zoom out / in / reset
+- `Ctrl + Shift + G` — Source Control (add, commit, push)
+- `Ctrl + Shift + V` — paste in Ubuntu terminal
+- `Right-click from mouse` — paste in Ubuntu terminal
+- `code .` — open current folder in VS Code (from Ubuntu terminal)
+- `explorer.exe .` — open current folder in Windows Explorer
